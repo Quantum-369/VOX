@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice SQL Assistant</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/VOX.ico">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Inter Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Section - Visualization -->
+        <div class="visualization-section">
+            <div class="gif-container">
+                <img src="assets/chat_vis.gif" alt="Voice Visualization" style="display: none;">
+            </div>
+            <!-- Single Microphone Button -->
+            <div class="mic-button-container">
+                <button class="glow-on-hover" aria-label="Toggle Recording">
+                    <i class="fas fa-microphone"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Right Section - Transcript -->
+        <div class="transcript-section">
+            <div class="transcript-box">
+                <div class="transcript-content">
+                    <!-- Transcript messages will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Indicator -->
+    <div class="status-indicator">
+        <div class="status-dot"></div>
+        <span class="status-text"></span>
+    </div>
+
+    <!-- Database Selection Modal -->
+    <div id="databaseModal" class="modal">
+        <div class="modal-content">
+            <h2>Select Database</h2>
+            <div class="database-list">
+                <!-- Database options will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
